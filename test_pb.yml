@@ -1,0 +1,8 @@
+---
+
+ - name: Testing Ansible
+   hosts: cisco:arista
+   tasks:
+     - debug:
+         msg: "{{ ansible_host }}, User: {{ username }} Pass: {{ password }}"
+     - ping:
